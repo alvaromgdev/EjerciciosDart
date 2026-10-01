@@ -5,6 +5,9 @@ void main() {
   double b = -5;
   double c = 6;
 
+  print("Ecuación de segundo grado: ax² + bx + c = 0");
+  print("a = $a, b = $b, c = $c");
+
   double denominador = b * b - 4 * a * c;
 
   if (denominador < 0) {

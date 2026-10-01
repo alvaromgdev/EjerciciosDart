@@ -1,13 +1,13 @@
 import 'dart:io';
 
 void main() {
-  print("Introduce el primer número:");
+  print("Introduzca el primer número:");
   int numero1 = int.parse(stdin.readLineSync()!);
 
-  print("Introduce el segundo número:");
+  print("Introduzca el segundo número:");
   int numero2 = int.parse(stdin.readLineSync()!);
 
-  print("Introduce el operador (+, -, *, /, %):");
+  print("Introduzca el operador (+, -, *, /, %):");
   String operador = stdin.readLineSync()!;
 
   switch (operador) {
@@ -24,7 +24,11 @@ void main() {
       break;
 
     case "/":
-      print("Resultado: ${numero1 ~/ numero2}");
+      if (numero2 == 0) {
+        print("Error: División por cero");
+      } else {
+        print("Resultado: ${numero1 / numero2}");
+      }
       break;
 
     case "%":
