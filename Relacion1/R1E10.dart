@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 10
+    Álvaro Mozo Gaspar */
+
 void main() {
 
   int n = 1;

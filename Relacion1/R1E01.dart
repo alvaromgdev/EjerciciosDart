@@ -1,7 +1,6 @@
-/* RELACIÓN 1 - EJERCICIO 1
-   1hola-mundo.dart
-   24 Septiembre 2026
-   Álvaro Mozo Gaspar */
+/*  DART
+    RELACIÓN 1 - EJERCICIO 1
+    Álvaro Mozo Gaspar */
 
 void main() {
 

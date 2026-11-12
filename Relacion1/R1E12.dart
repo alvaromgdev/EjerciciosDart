@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 12
+    Álvaro Mozo Gaspar */
+
 void main() {
   // Los dos números enteros positivos
   int a = 48;

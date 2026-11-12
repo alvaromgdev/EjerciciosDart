@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 6
+    Álvaro Mozo Gaspar */
+
 import 'dart:io';
 
 void main() {

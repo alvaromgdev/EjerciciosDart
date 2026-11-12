@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 5
+    Álvaro Mozo Gaspar */
+
 void main() {
 
   double lado1 = 5.0;

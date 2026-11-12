@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 19
+    Álvaro Mozo Gaspar */
+
 void main() {
   // Usamos int? para permitir que haya edades "no inicializadas" (null)
   Map<String, int?> personas = {

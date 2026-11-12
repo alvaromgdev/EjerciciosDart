@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 18
+    Álvaro Mozo Gaspar */
+
 enum ColorArcoIris { rojo, naranja, amarillo, verde, azul, anil, violeta }
 
 void main() {

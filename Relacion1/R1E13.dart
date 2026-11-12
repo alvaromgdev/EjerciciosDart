@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 13
+    Álvaro Mozo Gaspar */
+
 void main() {
   // Datos de entrada
   int dividendo = 17;

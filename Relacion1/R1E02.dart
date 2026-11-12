@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 2
+    Álvaro Mozo Gaspar */
+
 void main() {
   // Declaración de variables de distintos tipos
   String nombre = "Álvaro";

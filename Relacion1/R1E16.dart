@@ -1,3 +1,7 @@
+/*  DART
+    RELACIÓN 1 - EJERCICIO 16
+    Álvaro Mozo Gaspar */
+
 void main() {
   // --- LISTA DE DÍAS ---
   // Declarar lista con días laborables y mostrarla
