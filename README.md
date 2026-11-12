@@ -19,34 +19,33 @@ El repositorio está organizado en cuatro relaciones de ejercicios, siguiendo el
 
 **Estado:** Completada.
 
-Introducción a los fundamentos de Dart:
-
-- Variables y tipos de datos.
-- Constantes y valores nullable.
-- Operadores y expresiones.
-- Estructuras de control y bucles.
-- Colecciones: `List`, `Map`, `Set` y `Record`.
-- Enumeraciones (`enum`).
-- Gestión de excepciones.
-- Operaciones matemáticas y algoritmos básicos.
+| Contenido | Ejercicios |
+|---|:---:|
+| Variables y tipos de datos | R1E01, R1E02 |
+| Constantes y valores nullable | R1E03, R1E04 |
+| Operadores y expresiones | R1E02, R1E05, R1E06, R1E07 |
+| Estructuras de control y bucles | R1E05–R1E15 |
+| Colecciones: `List`, `Map`, `Set` y `Record` | R1E02, R1E16, R1E19 |
+| Enumeraciones (`enum`) | R1E17 |
+| Gestión de excepciones | R1E18 |
+| Operaciones matemáticas y algoritmos básicos | R1E05–R1E15, R1E20 |
 
 ### Relación 2 – Ejercicios con funciones
 
-**Estado:** Pendiente de completar.
+**Estado:** En desarrollo.
 
-Trabajo con funciones, parámetros, valores de retorno, recursividad y creación de librerías propias.
-
-### Relación 3 – Ejercicios con funciones (segunda parte)
-
-**Estado:** Pendiente.
-
-Profundización en funciones, validación de datos, cadenas de texto, expresiones regulares, colecciones, fechas, funciones anónimas y pruebas unitarias.
-
-### Relación 4 – Ejercicios con clases
-
-**Estado:** Pendiente.
-
-Introducción a la programación orientada a objetos: clases, objetos, constructores, encapsulación, composición, herencia, polimorfismo, clases abstractas, mixins y pruebas unitarias.
+| Contenido | Ejercicios |
+|---|:---:|
+| Declaración e invocación de funciones | 1-20 |
+| Parámetros y argumentos | 2-4 |
+| Parámetros opcionales y valores por defecto | 3, 4 |
+| Parámetros nullable | 4 |
+| Funciones con y sin valor de retorno | 1, 5-13 |
+| Funciones recursivas | 14-17 |
+| Algoritmos matemáticos mediante funciones | 6–10, 13–17 |
+| Funciones con listas y mapas | 11, 12, 18, 19 |
+| Registros (`Record`) como valor de retorno | 9 |
+| Creación e importación de librerías propias | 20 |
 
 ## Organización y documentación
 
