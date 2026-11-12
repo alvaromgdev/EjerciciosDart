@@ -15,37 +15,19 @@ El objetivo es poner en práctica los fundamentos del lenguaje Dart y avanzar pr
 
 El repositorio está organizado en cuatro relaciones de ejercicios, siguiendo el orden establecido en la asignatura.
 
-### Relación 1 – Ejercicios iniciales
-
-**Estado:** Completada.
-
-| Contenido | Ejercicios |
-|---|:---:|
-| Variables y tipos de datos | R1E01, R1E02 |
-| Constantes y valores nullable | R1E03, R1E04 |
-| Operadores y expresiones | R1E02, R1E05, R1E06, R1E07 |
-| Estructuras de control y bucles | R1E05–R1E15 |
-| Colecciones: `List`, `Map`, `Set` y `Record` | R1E02, R1E16, R1E19 |
-| Enumeraciones (`enum`) | R1E17 |
-| Gestión de excepciones | R1E18 |
-| Operaciones matemáticas y algoritmos básicos | R1E05–R1E15, R1E20 |
-
-### Relación 2 – Ejercicios con funciones
-
-**Estado:** En desarrollo.
-
-| Contenido | Ejercicios |
-|---|:---:|
-| Declaración e invocación de funciones | 1-20 |
-| Parámetros y argumentos | 2-4 |
-| Parámetros opcionales y valores por defecto | 3, 4 |
-| Parámetros nullable | 4 |
-| Funciones con y sin valor de retorno | 1, 5-13 |
-| Funciones recursivas | 14-17 |
-| Algoritmos matemáticos mediante funciones | 6–10, 13–17 |
-| Funciones con listas y mapas | 11, 12, 18, 19 |
-| Registros (`Record`) como valor de retorno | 9 |
-| Creación e importación de librerías propias | 20 |
+| **Relación 1 – Ejercicios iniciales** | **Relación 2 – Ejercicios con funciones** |
+|---|---|
+| **Estado:** Completada | **Estado:** En desarrollo |
+| **Variables y tipos de datos:** 1, 2 | **Declaración e invocación de funciones:** 1–20 |
+| **Constantes y valores nullable:** 3, 4 | **Parámetros y argumentos:** 2–4 |
+| **Operadores y expresiones:** 2, 5–7 | **Parámetros opcionales y valores por defecto:** 3, 4 |
+| **Estructuras de control y bucles:** 5–15 | **Parámetros nullable:** 4 |
+| **Colecciones (`List`, `Map`, `Set` y `Record`):** 16, 19 | **Funciones con y sin valor de retorno:** 1, 5–13 |
+| **Enumeraciones (`enum`):** 17 | **Funciones recursivas:** 14–17 |
+| **Gestión de excepciones:** 18 | **Algoritmos matemáticos mediante funciones:** 6–10, 13–17 |
+| **Operaciones matemáticas y algoritmos básicos:** 5–15, 20 | **Funciones con listas y mapas:** 11, 12, 18, 19 |
+|  | **Registros (`Record`):** 9 |
+|  | **Creación e importación de librerías:** 20 |
 
 ## Organización y documentación
 
