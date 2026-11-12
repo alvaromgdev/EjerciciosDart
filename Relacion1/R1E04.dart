@@ -4,6 +4,7 @@
 
 void main() {
 
+  // Declaración de una variable nula
   int? variableNull;
 
   print("Valor de miVariableNull: $variableNull"); // Imprime null

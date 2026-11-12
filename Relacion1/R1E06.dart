@@ -5,6 +5,7 @@
 import 'dart:io';
 
 void main() {
+  // Solicitar al usuario que introduzca dos números y un operador
   print("Introduzca el primer número:");
   int numero1 = int.parse(stdin.readLineSync()!);
 
@@ -14,6 +15,7 @@ void main() {
   print("Introduzca el operador (+, -, *, /, %):");
   String operador = stdin.readLineSync()!;
 
+  // Realizar la operación según el operador introducido
   switch (operador) {
     case "+":
       print("Resultado: ${numero1 + numero2}");

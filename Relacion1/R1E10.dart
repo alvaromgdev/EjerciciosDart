@@ -4,6 +4,7 @@
 
 void main() {
 
+  // Muestra la suma de los números del 1 al 10 utilizando un bucle while
   int n = 1;
   int suma = 0;
 

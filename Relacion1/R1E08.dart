@@ -5,6 +5,7 @@
 import 'dart:io';
 
 void main() {
+  // Solicitar al usuario que introduzca un número entero entre 1 y 10
   stdout.write('Introduce un número entero entre 1 y 10: ');
   
   // 1. Manejo del Null Safety: Capturamos la entrada en un String nullable

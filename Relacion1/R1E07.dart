@@ -5,6 +5,7 @@
 import 'dart:math';
 
 void main() {
+  // Coeficientes de la ecuación de segundo grado
   double a = 1;
   double b = -5;
   double c = 6;
@@ -12,8 +13,10 @@ void main() {
   print("Ecuación de segundo grado: ax² + bx + c = 0");
   print("a = $a, b = $b, c = $c");
 
+  // Cálculo del denominador para determinar la naturaleza de las raíces
   double denominador = b * b - 4 * a * c;
 
+  // Determinar la naturaleza de las raíces y calcularlas si son reales
   if (denominador < 0) {
     print("Las raíces no son reales");
   } else if (denominador == 0) {
