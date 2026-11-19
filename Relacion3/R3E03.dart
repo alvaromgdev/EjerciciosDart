@@ -9,7 +9,6 @@
  */
 
 import 'dart:io';
-import './common.dart';
 
 bool isMayus(String str) {
   bool isMayus = false;
