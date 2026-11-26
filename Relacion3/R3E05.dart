@@ -28,7 +28,7 @@ void main() {
    */
 
   String intString = "100";
-  String doubleString = "100.1";
+  String doubleString = "100.15";
   String boolString = "false";
 
   int intParseado = int.parse(intString);
@@ -51,7 +51,7 @@ void main() {
    * split(), que divide la cadena según un separador.
    */
 
-  String listaString = "rojo,verde,azul";
+  String listaString = "Rojo,Verde,Azul,Amarillo,Naranja";
 
   List<String> lista = listaString.split(",");
 
