@@ -13,7 +13,35 @@ El objetivo es poner en práctica los fundamentos del lenguaje Dart y avanzar pr
 
 ## Relaciones de ejercicios
 
-El repositorio está organizado en cuatro relaciones de ejercicios, siguiendo el orden establecido en la asignatura.
+El repositorio está organizado en cuatro relaciones de ejercicios y dos proyectos independientes en la raíz.
+
+```text
+EjerciciosDart/
+│
+├── fechas_dart/
+│   ├── bin/
+│   └── pubspec.yaml
+│
+├── proyecto_testing/
+│   ├── bin/
+│   ├── lib/
+│   ├── test/
+│   └── pubspec.yaml
+│
+├── Relacion1/
+│   └── R1E01.dart – R1E20.dart
+│
+├── Relacion2/
+│   └── R2E01.dart – R2E20.dart
+│
+├── Relacion3/
+│   └── R3E01.dart – R3E20.dart
+│
+├── Relacion4/
+│   └── R4E01.dart – R4E16.dart
+│
+└── README.md
+```
 
 ### Relación 1 – Ejercicios iniciales
 
@@ -46,6 +74,34 @@ El repositorio está organizado en cuatro relaciones de ejercicios, siguiendo el
 | **Funciones con listas y mapas** | 11, 12, 18, 19 |
 | **Registros (`Record`)** | 9 |
 | **Creación e importación de librerías** | 20 |
+
+### Relación 3 – Ejercicios de Dart
+
+**Estado:** Completada.
+
+| Contenido | Ejercicios |
+|---|:---:|
+| **Entrada estándar y salida por consola (`dart:io`)** | 1, 2, 6, 7 |
+| **Conversión y validación de datos (`parse()`, `toString()` y `try-catch`)** | 1, 4, 5 |
+| **Generación de números aleatorios (`Random`)** | 2 |
+| **Estrategias de búsqueda (búsqueda binaria)** | 2 |
+| **Manipulación y comparación de cadenas (`String`)** | 3, 6, 7 |
+| **Cadenas multilínea** | 3 |
+| **Concatenación y conversión de tipos de datos** | 4, 5 |
+| **Tipos de datos (`int`, `double`, `bool`, `List`, `Map`, `Enum`, `Set`)** | 4, 5 |
+| **Formato y conversión de números decimales (`double`)** | 5 |
+| **Manipulación de cadenas y palabras** | 6 |
+| **Palíndromos** | 6 |
+| **Búsqueda de subcadenas y posiciones (`indexOf`, `lastIndexOf`)** | 7 |
+| **Validación de datos y expresiones regulares** | 8–11 |
+| **Creación e importación de librerías** | 12 |
+| **Colecciones (`List` y `Map`)** | 13, 14 |
+| **Manejo de URI** | 15 |
+| **Fechas y horas (`DateTime` e `intl`)** | 16 |
+| **Pruebas unitarias con `test`, `test()` y `expect()`** | 17–19 |
+| **Agrupación de pruebas con `group()`** | 18, 19 |
+| **Funciones anónimas y funciones de orden superior** | 20 |
+| **Métodos y operaciones con listas** | 13, 14, 20 |
 
 ## Organización y documentación
 
