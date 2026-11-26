@@ -39,10 +39,10 @@ void main() {
 
         // Comprobamos que el color no esté ya incluido
         if (colores.contains(color)) {
-          print("El color ya existe en la lista.");
+          print("El color ya existe en la lista");
         } else {
           colores.add(color);
-          print("Color incluido correctamente.");
+          print("Color incluido correctamente");
         }
 
         break;
@@ -50,17 +50,30 @@ void main() {
       // 2. Eliminar color
       case 2:
 
-        stdout.write("Introduzca el color que desea eliminar: ");
-        String color = stdin.readLineSync()!;
-
-        // Buscamos la posición del color
-        int posicion = colores.indexOf(color);
-
-        if (posicion != -1) {
-          colores.removeAt(posicion);
-          print("Color eliminado correctamente.");
+        // Comprobamos si la lista está vacía
+        if (colores.isEmpty) {
+          print("La lista de colores está vacía");
         } else {
-          print("El color no existe en la lista.");
+
+          // Mostramos los colores disponibles antes de eliminar
+          print("Colores disponibles:");
+
+          for (int i = 0; i < colores.length; i++) {
+            print("${i + 1}. ${colores[i]}");
+          }
+
+          stdout.write("Introduzca el color que desea eliminar: ");
+          String color = stdin.readLineSync()!;
+
+          // Buscamos la posición del color
+          int posicion = colores.indexOf(color);
+
+          if (posicion != -1) {
+            colores.removeAt(posicion);
+            print("Color eliminado correctamente");
+          } else {
+            print("El color no existe en la lista");
+          }
         }
 
         break;
@@ -68,15 +81,21 @@ void main() {
       // 3. Buscar color
       case 3:
 
-        stdout.write("Introduzca el color que desea buscar: ");
-        String color = stdin.readLineSync()!;
-
-        int posicion = colores.indexOf(color);
-
-        if (posicion != -1) {
-          print("El color se encuentra en la posición $posicion.");
+        // Comprobamos si la lista está vacía
+        if (colores.isEmpty) {
+          print("La lista de colores está vacía");
         } else {
-          print("El color no existe en la lista.");
+
+          stdout.write("Introduzca el color que desea buscar: ");
+          String color = stdin.readLineSync()!;
+
+          int posicion = colores.indexOf(color);
+
+          if (posicion != -1) {
+            print("El color se encuentra en la posición $posicion");
+          } else {
+            print("El color no existe en la lista");
+          }
         }
 
         break;
@@ -85,7 +104,7 @@ void main() {
       case 4:
 
         if (colores.isEmpty) {
-          print("La lista de colores está vacía.");
+          print("La lista de colores está vacía");
         } else {
           print("Lista de colores: $colores");
           print("Número de colores: ${colores.length}");

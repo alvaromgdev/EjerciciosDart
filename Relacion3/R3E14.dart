@@ -47,11 +47,13 @@ void main() {
         stdout.write("Introduzca su número de teléfono: ");
         String telefono = stdin.readLineSync()!;
 
-        // Insertamos la persona solamente si no existe
-        grupoWhatsapp.putIfAbsent(nombre, () => telefono);
-
-        if (grupoWhatsapp[nombre] == telefono) {
-          print("Persona incluida o ya existente en el grupo.");
+        // Comprobamos si la persona ya existe
+        if (grupoWhatsapp.containsKey(nombre)) {
+          print("La persona ya existe en el grupo");
+        } else {
+          // Insertamos la nueva persona
+          grupoWhatsapp.putIfAbsent(nombre, () => telefono);
+          print("Persona incluida correctamente");
         }
 
         break;
@@ -59,14 +61,27 @@ void main() {
       // 2. Eliminar persona
       case 2:
 
-        stdout.write("Introduzca el nombre de la persona que desea eliminar: ");
-        String nombre = stdin.readLineSync()!;
-
-        if (grupoWhatsapp.containsKey(nombre)) {
-          grupoWhatsapp.remove(nombre);
-          print("Persona eliminada correctamente.");
+        // Comprobamos si el mapa está vacío
+        if (grupoWhatsapp.isEmpty) {
+          print("El grupo está vacío");
         } else {
-          print("La persona no existe en el grupo.");
+
+          // Mostramos los componentes disponibles antes de eliminar
+          print("Componentes actuales del grupo:");
+
+          for (MapEntry<String, String> persona in grupoWhatsapp.entries) {
+            print("Nombre: ${persona.key} - Teléfono: ${persona.value}");
+          }
+
+          stdout.write("Introduzca el nombre de la persona que desea eliminar: ");
+          String nombre = stdin.readLineSync()!;
+
+          if (grupoWhatsapp.containsKey(nombre)) {
+            grupoWhatsapp.remove(nombre);
+            print("Persona eliminada correctamente");
+          } else {
+            print("La persona no existe en el grupo");
+          }
         }
 
         break;
@@ -74,14 +89,20 @@ void main() {
       // 3. Buscar persona
       case 3:
 
-        stdout.write("Introduzca el nombre de la persona que desea buscar: ");
-        String nombre = stdin.readLineSync()!;
-
-        if (grupoWhatsapp.containsKey(nombre)) {
-          print("Nombre: $nombre");
-          print("Teléfono: ${grupoWhatsapp[nombre]}");
+        // Comprobamos si el mapa está vacío
+        if (grupoWhatsapp.isEmpty) {
+          print("El grupo está vacío");
         } else {
-          print("La persona no existe en el grupo.");
+
+          stdout.write("Introduzca el nombre de la persona que desea buscar: ");
+          String nombre = stdin.readLineSync()!;
+
+          if (grupoWhatsapp.containsKey(nombre)) {
+            print("Nombre: $nombre");
+            print("Teléfono: ${grupoWhatsapp[nombre]}");
+          } else {
+            print("La persona no existe en el grupo");
+          }
         }
 
         break;
@@ -90,7 +111,7 @@ void main() {
       case 4:
 
         if (grupoWhatsapp.isEmpty) {
-          print("El grupo está vacío.");
+          print("El grupo está vacío");
         } else {
           print("Componentes del grupo:");
 
