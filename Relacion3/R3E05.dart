@@ -43,7 +43,7 @@ void main() {
   print("Bool: $boolParseado");
 
   // --------------------------------------------------
-  // CONVERSIÓN DE STRING A LIST, ENUM Y SET
+  // CONVERSIÓN DE STRING A LIST, ENUM
   // --------------------------------------------------
 
   /**
@@ -71,19 +71,6 @@ void main() {
   Color colorSeleccionado = Color.values.byName(textoColor);
 
   print("Enum: $colorSeleccionado");
-
-  /**
-   * Para crear un Set a partir de una List, podemos
-   * utilizar toSet()
-   *
-   * El Set elimina los elementos duplicados
-   */
-
-  List<int> listaNumeros = [1, 2, 2, 3, 3, 4];
-
-  Set<int> conjuntoNumeros = listaNumeros.toSet();
-
-  print("Set: $conjuntoNumeros");
 
   // --------------------------------------------------
   // CONVERSIÓN DE STRING A MAP MEDIANTE JSON
@@ -139,7 +126,7 @@ void main() {
   String listaComoTexto = listaColores.toString();
   String mapaComoTexto = mapaDatos.toString();
   String enumComoTexto = colorSeleccionado.toString();
-  String conjuntoComoTexto = conjuntoNumeros.toString();
+  String conjuntoComoTexto = conjuntoDesdeJson.toString();
 
   print("List a String: $listaComoTexto");
   print("Map a String: $mapaComoTexto");
@@ -160,7 +147,7 @@ void main() {
 
   String mapaJson = jsonEncode(mapaDatos);
 
-  String conjuntoJson = jsonEncode(conjuntoNumeros.toList());
+  String conjuntoJson = jsonEncode(conjuntoDesdeJson.toList());
 
   print("Map a String JSON: $mapaJson");
   print("Set a String JSON: $conjuntoJson");

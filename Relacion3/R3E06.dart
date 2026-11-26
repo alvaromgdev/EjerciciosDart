@@ -42,30 +42,32 @@ String invertirCaracteres(String frase) {
 }
 
 /**
- * Función que comprueba si una frase es un palíndromo.
+ * Función que comprueba si una frase es un palíndromo
  *
- * Recibe una cadena de texto.
- * Devuelve true si es un palíndromo y false en caso contrario.
+ * Recibe una cadena de texto
+ * Devuelve true si es un palíndromo y false en caso contrario
  *
  * Para realizar la comprobación:
- * - Convertimos la frase a minúsculas.
- * - Eliminamos los espacios.
- * - Eliminamos los signos de puntuación.
- * - Eliminamos los acentos.
- * - Comparamos la frase normalizada con su versión invertida.
+ * - Convertimos la frase a minúsculas
+ * - Eliminamos los espacios
+ * - Eliminamos los signos de puntuación
+ * - Eliminamos los acentos
+ * - Comparamos la frase normalizada con su versión invertida
  */
 bool esPalindromo(String frase) {
   String fraseNormalizada = frase.toLowerCase();
 
   fraseNormalizada = fraseNormalizada
       .replaceAll(" ", "")
+      .replaceAll("-", "")
       .replaceAll(",", "")
       .replaceAll(".", "")
       .replaceAll("á", "a")
       .replaceAll("é", "e")
       .replaceAll("í", "i")
       .replaceAll("ó", "o")
-      .replaceAll("ú", "u");
+      .replaceAll("ú", "u")
+      .replaceAll("ü", "u");
 
   String fraseInvertida = fraseNormalizada.split("").reversed.join("");
 
@@ -90,8 +92,8 @@ void main() {
 
   // Comprobamos si la frase es un palíndromo.
   if (esPalindromo(frase)) {
-    print("La frase es un palíndromo.");
+    print("La frase es un palíndromo");
   } else {
-    print("La frase no es un palíndromo.");
+    print("La frase no es un palíndromo");
   }
 }

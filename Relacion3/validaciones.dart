@@ -22,11 +22,18 @@ bool isRGB(String str) {
 /**
  * Comprueba si una cadena representa una URL web.
  *
- * Acepta direcciones que comiencen por http:// o https://.
+ * Comprueba los siguientes elementos:
+ *
+ * - Protocolo obligatorio: http:// o https://.
+ * - Subdominio opcional: por ejemplo, www.
+ * - Dominio obligatorio.
+ * - Extensión obligatoria: .com, .es, .org, etc.
+ * - Puerto opcional: por ejemplo, :8080.
+ * - Ruta opcional: por ejemplo, /productos.
  */
 bool isURL(String str) {
   return RegExp(
-    r"^https?:\/\/([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(:[0-9]{1,5})?(\/[^\s]*)?$"
+    r"^https?:\/\/(www\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(:[0-9]{1,5})?(\/[^\s]*)?$"
   ).hasMatch(str);
 }
 
@@ -37,11 +44,11 @@ bool isURL(String str) {
 /**
  * Comprueba si una cadena tiene un formato de correo electrónico válido.
  *
- * Comprueba la estructura usuario@dominio.extensión.
+ * Comprueba la estructura usuario@dominio.extensión
  */
 bool isEmail(String str) {
   return RegExp(
-    r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+    r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
   ).hasMatch(str);
 }
 
