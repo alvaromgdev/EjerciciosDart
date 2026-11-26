@@ -103,6 +103,33 @@ EjerciciosDart/
 | **Funciones anónimas y funciones de orden superior** | 20 |
 | **Métodos y operaciones con listas** | 13, 14, 20 |
 
+### Relación 4 – Ejercicios con clases
+
+**Estado:** En desarrollo.
+
+| Contenido | Ejercicios |
+|---|:---:|
+| **Clases, atributos y creación de objetos** | 1–3, 8, 11 |
+| **Constructores y propiedades** | 1–3, 4, 8, 11 |
+| **Métodos y sobrescritura de `toString()`** | 1, 4, 8, 11 |
+| **Colecciones y manipulación de listas** | 2, 3, 7 |
+| **Comparación de colecciones (`mapEquals()`)** | 3 |
+| **Composición de clases** | 5, 6 |
+| **Operaciones matemáticas con puntos y vectores** | 4–6 |
+| **Clases abstractas, getters e interfaces** | 7, 9 |
+| **Herencia y polimorfismo** | 7, 9, 12 |
+| **Figuras geométricas: áreas y perímetros** | 7 |
+| **Encapsulación y gestión de cuentas bancarias** | 8–10 |
+| **Jerarquías de clases y clases derivadas** | 9, 12 |
+| **Refactorización y composición frente a herencia** | 10 |
+| **Operaciones aritméticas con fracciones** | 11 |
+| **Simplificación de fracciones y máximo común divisor** | 11 |
+| **Comparación de fracciones** | 12 |
+| **Mixins, genéricos e interfaces (`Comparable<T>`)** | 13 |
+| **Pruebas unitarias con `test`** | 14–16 |
+| **Testing de clases y operaciones matemáticas** | 14, 16 |
+| **Testing de jerarquías de clases** | 15 |
+
 ## Organización y documentación
 
 Cada relación dispone de su propio directorio y los ejercicios se encuentran separados en archivos individuales de Dart, identificados mediante el número de relación y ejercicio.
